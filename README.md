@@ -4,8 +4,8 @@ Stack Machine using Polish Postfix notation
 
 # How to run ?
 
-Download the file stack-1.0.1.raj and place it a directory..
-Change the extension from raj to jar. The extension was changed intentionally as Gmail doesn't allow to attch jar files.
+1. Download the file stack-machine-1.0.1.raj and place it a directory..
+2 Change the extension from raj to jar. The extension was changed intentionally as Gmail doesn't allow to attch jar files.
 Open Command Prompt and goto the download directory.
 Use command "java -jar stack-1.0.1.jar" to run the application.
 Initial Stack is empty and commands can be started as soon as the application starts.
@@ -30,5 +30,5 @@ Application uses Maven as the build tool, so the code can be built using "mvn cl
 
 # Improvements
 
-Web based UI can be made to interact with the application.
-Application can be easily transformed to use spring managed dependencies and a spring boot application.
+1. Web based UI can be made to interact with the application.
+2. Application can be easily transformed to use spring managed dependencies and a spring boot application.
