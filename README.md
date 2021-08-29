@@ -1,5 +1,5 @@
 # stackmachine
-Stack Machine using Polish Postfix notation
+Stack Machine implementation using Polish Postfix notation.
 
 
 # How to run ?
@@ -55,4 +55,4 @@ Application uses Maven as the build tool, so the code can be built using "mvn cl
 # Improvements
 
 1. Web based UI can be made to interact with the application.
-2. Application can be easily transformed to use spring managed dependencies and a spring boot application.
+2. Application can be easily transformed to use spring managed dependencies and to a spring boot application.
