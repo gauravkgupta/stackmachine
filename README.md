@@ -15,13 +15,38 @@ The application is developed to take inputs and display results on command line.
 
 The application logs will be created under logs directory in a file called "app-stack.log".
 
-UNDO: From the requirements, it wasn't clear to me that requirement is to handle only undo of last command or any number of undo as the commands given to the machine. Therefore both the implementaions are provided. StackCommandProcessor: This class handles undo of last command only and subsequent undo commands will be ignored. StackCommandAllUndoProcessor: This class handles unlimited undo of all commands given to the stack machine.
+UNDO: From the requirements, it wasn't clear to me that requirement is to handle only undo of last command or any number of undo as the commands given to the machine. Therefore both the implementaions are provided. 
 
-In the jar, single undo command class is used.
+StackCommandProcessor: This class handles undo of last command only and subsequent consequent undo commands will be ignored. 
+e.g.
+PUSH 1
+PUSH 2
+ADD
+UNDO
+UNDO
+POP
+UNDO
+
+2nd UNDO will be ignored whereas 1st and 3rd will work.
+
+StackCommandAllUndoProcessor: This class handles unlimited undo of all commands given to the stack machine.
+e.g.
+PUSH 1
+PUSH 2
+ADD
+UNDO
+UNDO
+POP
+UNDO
+
+ALL UNDO will work in this implementation.
+
+In the jar, single undo command class (StackCommandProcessor) is used.
 
 Following line in class StackMachine.java can be changed CommandProcessor processor = new StackCommandProcessor(); to CommandProcessor processor = new StackCommandAllUndoProcessor();
 
 for using doing unlimited undos.
+
 
 # How to build?
 
