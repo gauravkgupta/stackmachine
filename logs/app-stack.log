@@ -1,0 +1,83 @@
+2021-08-28 15:34:49,827 INFO com.stack.processor.StackMachine [main] Stack Machine Started
+2021-08-28 15:35:22,786 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:35:28,359 INFO com.stack.command.ClearStackOperation [main] Clearing Stack
+2021-08-28 15:35:28,361 INFO com.stack.command.ClearStackOperation [main] Cleared Stack by popping values [-0.3333, 13]
+2021-08-28 15:35:36,517 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:36:55,893 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:36:58,500 INFO com.stack.command.ClearStackOperation [main] Nothing to undo currenty.
+2021-08-28 15:36:58,500 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:37:26,662 INFO com.stack.processor.StackMachine [main] Stack Machine Started
+2021-08-28 15:38:08,325 INFO com.stack.processor.StackMachine [main] Stack Machine Started
+2021-08-28 15:38:21,819 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:38:26,261 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:38:32,104 WARN com.stack.command.AddStackOperation [main] Invalid Operation - Ignoring ADD.
+2021-08-28 15:39:05,875 INFO com.stack.command.ClearStackOperation [main] Clearing Stack
+2021-08-28 15:39:05,877 INFO com.stack.command.ClearStackOperation [main] Cleared Stack by popping values [1, 2, 3, 4, 5, 6, 15, 9]
+2021-08-28 15:39:10,807 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:15,829 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:21,431 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:28,995 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:33,250 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:34,631 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:36,131 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:37,425 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:38,772 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:40,098 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:48,323 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:39:54,897 WARN com.stack.command.NegateStackOperation [main] Invalid Operation ignoring NEG.
+2021-08-28 15:39:57,123 WARN com.stack.command.InverseStackOperation [main] Invalid Operation as Stack is Empty ignoring INV.
+2021-08-28 15:43:18,564 WARN com.stack.command.AddStackOperation [main] Invalid Operation only 1 value in stack - Ignoring ADD.
+2021-08-28 15:43:18,583 INFO com.stack.command.ClearStackOperation [main] Clearing Stack
+2021-08-28 15:43:18,584 INFO com.stack.command.ClearStackOperation [main] Cleared Stack by popping values []
+2021-08-28 15:43:18,595 WARN com.stack.command.InverseStackOperation [main] Invalid Operation as Stack is Empty ignoring INV.
+2021-08-28 15:43:18,601 WARN com.stack.command.MultiplyStackOperation [main] Invalid Operation only 1 value in stack - ignoring MUL.
+2021-08-28 15:43:18,611 WARN com.stack.command.NegateStackOperation [main] Invalid Operation ignoring NEG.
+2021-08-28 15:43:18,620 WARN com.stack.command.PopStackOperation [main] Stack is empty - Ignoring POP.
+2021-08-28 15:43:18,638 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:43:18,639 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:43:18,639 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:43:18,642 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 15:43:18,754 ERROR com.stack.validation.StackInputValidator [main] Invalid Command Supplied - PUSH
+com.stack.exception.InputValidationException: Invalid Command Supplied - PUSH
+	at com.stack.validation.StackInputValidator.validateSingleValue(StackInputValidator.java:65)
+	at com.stack.validation.StackInputValidator.validateNonNullInput(StackInputValidator.java:38)
+	at com.stack.validation.StackInputValidator.validate(StackInputValidator.java:23)
+	at com.stack.validation.StackInputValidatorTest.lambda$testPushWithoutCommand$0(StackInputValidatorTest.java:24)
+	at org.junit.Assert.assertThrows(Assert.java:1001)
+	at org.junit.Assert.assertThrows(Assert.java:981)
+	at com.stack.validation.StackInputValidatorTest.testPushWithoutCommand(StackInputValidatorTest.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+2021-08-28 16:00:17,876 INFO com.stack.processor.StackMachine [main] Stack Machine Started
+2021-08-28 16:00:25,600 INFO com.stack.command.ClearStackOperation [main] Clearing Stack
+2021-08-28 16:00:25,601 INFO com.stack.command.ClearStackOperation [main] Cleared Stack by popping values [1, 2, 3, 4]
+2021-08-28 16:00:27,140 INFO com.stack.command.ClearStackOperation [main] Undo Done
+2021-08-28 16:00:32,288 INFO com.stack.processor.StackMachine [main] Stack Machine Closed
+2021-08-28 16:00:36,203 INFO com.stack.processor.StackMachine [main] Stack Machine Started
+2021-08-28 16:02:15,770 INFO com.stack.processor.StackMachine [main] Stack Machine Closed
